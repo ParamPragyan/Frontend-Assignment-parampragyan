@@ -9,10 +9,10 @@ const MediaPanel = () => {
           key={idx}
           className=" flex flex-col w-fit h-fit justify-start items-start"
         >
-          <div className="w-[15rem] h-[10rem] bg-[black] rounded-md">
-            {/* Rendered content should be fetched here  */}
-          </div>
-          <h1 key={idx} className="text-xl font-medium">{media.name}</h1>
+          <div className="w-[15rem] h-[10rem] bg-[black] rounded-md"></div>
+          <h1 key={idx} className="text-xl font-medium">
+            {media.name}
+          </h1>
         </div>
       ))}
     </div>

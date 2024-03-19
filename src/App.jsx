@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Editor from "./pages/editor";

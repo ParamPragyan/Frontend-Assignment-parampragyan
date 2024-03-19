@@ -2,7 +2,6 @@ import React from "react";
 import { FaCrop } from "react-icons/fa6";
 import { LuPointer } from "react-icons/lu";
 import { FaArrowPointer } from "react-icons/fa6";
-
 import { SiAddthis } from "react-icons/si";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { FaThList } from "react-icons/fa";
@@ -25,7 +24,8 @@ const editor = () => {
           </div>
 
           <MediaPanel />
-          {/* bottom-pannel */}
+
+          {/* asset-bottom-pannel */}
           <div className="flex items-center justify-end p-4 gap-20">
             <div>
               <SiAddthis className="text-[1.8rem] cursor-pointer" />
@@ -37,6 +37,7 @@ const editor = () => {
           </div>
         </div>
 
+        {/* editor-space */}
         <div className="workspace max-md:  w-1/2 max-lg:w-3/4 max-md:w-full flex flex-col items-center justify-center px-10 max-md:p-5">
           <div className="sm:hidden">
             <BarTop />
@@ -52,6 +53,7 @@ const editor = () => {
 
           <div
             className="editing-panel-wrapper w-full relative"
+            // for using the 16:9 ratio in the panel the 55.25% came by (9/16)
             style={{ paddingBottom: "56.25%" }}
           >
             <div className="editing-panel absolute inset-0 bg-[#000]"></div>
