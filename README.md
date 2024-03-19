@@ -13,6 +13,9 @@ This assignment contains the UI of the dashboard and the editor page.
 This project is live on - [https://frontend-assignment-parampragyan.vercel.app/](https://frontend-assignment-parampragyan.vercel.app/)
 
 
+> <i> The extracted data like the projects and Assets are blank data shown for the demo purpose, although the name of the files are mapped properly.</i>
+
+
 ## Technology Used:
 
 1. **ReactJS**
@@ -47,7 +50,7 @@ cd Frontend-Assignment-parampragyan
 ```bash
 yarn
 ```
-<br>
+
 ## Running the App
 
 To run the app in development mode, use the following command:
@@ -56,3 +59,6 @@ To run the app in development mode, use the following command:
 ```bash
 yarn dev
 ```
+## Made by
+
+GitHub: [Param Pragyan](https://github.com/ParamPragyan)
