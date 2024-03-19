@@ -10,7 +10,7 @@ This assignment contains the UI of the dashboard and the editor page.
 
 ![alt text](public/ss2.png)
 
-This project is live on - [https://frontend-assignment-parampragyan.vercel.app/](https://frontend-assignment-parampragyan.vercel.app/)
+This project is live on - [https://video-editor-ten-eta.vercel.app/](https://video-editor-ten-eta.vercel.app/)
 
 
 > <i> The extracted data like the projects and Assets are blank data shown for the demo purpose, although the name of the files are mapped properly.</i>
