@@ -2,6 +2,7 @@ import React from "react";
 import { FaCrop } from "react-icons/fa6";
 import { LuPointer } from "react-icons/lu";
 import { FaArrowPointer } from "react-icons/fa6";
+
 import { SiAddthis } from "react-icons/si";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { FaThList } from "react-icons/fa";
@@ -53,7 +54,6 @@ const editor = () => {
 
           <div
             className="editing-panel-wrapper w-full relative"
-            // for using the 16:9 ratio in the panel the 55.25% came by (9/16)
             style={{ paddingBottom: "56.25%" }}
           >
             <div className="editing-panel absolute inset-0 bg-[#000]"></div>
