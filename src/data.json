@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+        "file": "project1",
+        "name": "Project Name - 1"
+      },
+      {
+        "file": "project2",
+        "name": "Project Name - 2"
+      },
+      {
+        "file": "project3",
+        "name": "Project Name - 3"
+      }
+  ],
+  "medias": [
+    {
+      "file": "file1.mp4",
+      "name": "file1.mp4"
+    },
+    {
+      "file": "file2.mp3",
+      "name": "file1.mp3"
+    }
+  ]
+}
