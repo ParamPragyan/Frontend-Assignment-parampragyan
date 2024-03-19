@@ -16,7 +16,7 @@ const dashboard = () => {
         {/* navbar */}
         <NavBar />
         {/* buttons */}
-        <div className="buttons-creation py-10 gap-8 flex max-md:flex-wrap ">
+        <div className="buttons-creation py-10 gap-8 flex max-lg:flex-wrap ">
           <NavLink to="/editor" className="max-md:w-full">
             <button className=" flex items-center justify-start rounded-2xl hover:shadow-xl  ease-[0s] duration-200 font-medium w-[30vh] max-md:w-full border border-[#00000014] p-6 bg-[#f3f3f3] ">
               <div className="bg-[black] p-2 rounded-xl">

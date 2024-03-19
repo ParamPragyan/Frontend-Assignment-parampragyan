@@ -48,7 +48,7 @@ const ControlTools = () => {
           <RiZoomInFill className="text-[1.8rem] cursor-pointer" />
         </button>
         <span className=" max-md:hidden text-[1rem] flex items-center justify-center w-12 bg-[#2b2b2b] text-white rounded-md px-2 py-1">
-          {zoomLevel + "%"}
+          {zoomLevel}%
         </span>
       </div>
     </div>

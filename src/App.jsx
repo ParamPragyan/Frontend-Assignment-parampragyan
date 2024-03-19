@@ -5,13 +5,13 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div>
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/editor" element={<Editor />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
