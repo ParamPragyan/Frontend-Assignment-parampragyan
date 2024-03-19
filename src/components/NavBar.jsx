@@ -1,4 +1,5 @@
 import React from "react";
+import userimg from "../../src/assets/user.png"
 
 const NavBar = () => {
   return (
@@ -29,7 +30,7 @@ const NavBar = () => {
       <div className="profile max-md:hidden ">
         <img
           className="w-16 rounded-full"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwaEfkGCG_-48LMB-z8GcnbePmS-ih_HHMA096X0bEGNcoKd5UE6BZ0v3r1hsLNv3iZ0c&usqp=CAU"
+          src={userimg}
           alt=""
         />
       </div>

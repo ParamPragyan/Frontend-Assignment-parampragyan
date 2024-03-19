@@ -59,14 +59,3 @@
   width: 1rem;
   cursor: pointer;
 }
-
-/* .zoom-range::-moz-range-thumb {
-  background: purple;
-  border: 1px solid purple;
-}
-
-.zoom-range::-ms-thumb {
-  background-color: #000000;
-  border: 1px solid purple;
-  color: rgb(76, 78, 78);
-} */
