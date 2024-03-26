@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useRef } from "react";
+
 import { FaCrop } from "react-icons/fa6";
 import { LuPointer } from "react-icons/lu";
 import { FaArrowPointer } from "react-icons/fa6";
@@ -14,8 +16,12 @@ import TrackRange from "../components/TrackRange";
 import MediaPanel from "../components/MediaPanel";
 import ControlTools from "../components/ControlTools";
 import BarTop from "../components/BarTop";
+import VideoPlayer from "../components/VideoPlayer";
 
 const editor = () => {
+  const [currentVideoTime, setCurrentVideoTime] = useState(0);
+  const videoRef = useRef(null);
+
   return (
     <div className="h-[100vh] bg-[#ffffff]">
       <div className="h-[70vh]  max-sm:flex-col bg-[#eaeaea] border-b border-[#00000014] flex justify-between">
@@ -56,7 +62,13 @@ const editor = () => {
             className="editing-panel-wrapper w-full relative"
             style={{ paddingBottom: "56.25%" }}
           >
-            <div className="editing-panel absolute inset-0 bg-[#000]"></div>
+            <div className="editing-panel absolute inset-0 bg-[#000]">
+              <VideoPlayer
+                videoRef={videoRef}
+                currenVideoTime={currentVideoTime}
+                setCurrentVideoTime={setCurrentVideoTime}
+              />
+            </div>
           </div>
         </div>
 
@@ -71,7 +83,11 @@ const editor = () => {
 
       <PlayControl />
       <ControlTools />
-      <TrackRange />
+      <TrackRange
+        videoRef={videoRef}
+        currenVideoTime={currentVideoTime}
+        setCurrentVideoTime={setCurrentVideoTime}
+      />
 
       <div className="add-media p-5 cursor-pointer z-50  ">
         <div className="text-2xl cursor-pointer w-full p-5 rounded-2xl bg-slate-100 hover:bg-slate-200 flex items-center justify-center">

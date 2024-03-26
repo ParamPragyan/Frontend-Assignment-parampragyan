@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-const TrackRange = () => {
-  const [value, setValue] = useState(5);
+const TrackRange = ({videoRef, currentVideoTime, setCurrentVideoTime}) => {
 
   const handleChange = (event) => {
-    setValue(parseInt(event.target.value));
+    const { value } = event.target;
+    setCurrentVideoTime(value);
+    if (videoRef.current) {
+      const newTime = (value / 100) * videoRef.current.duration;
+      videoRef.current.currentTime = newTime;
+    }
   };
 
   return (
@@ -14,7 +18,7 @@ const TrackRange = () => {
         min="0"
         max="100"
         step="1"
-        value={value}
+        value={currentVideoTime}
         onChange={handleChange}
         className="w-full track-range appearance-none h-4  outline-none focus:outline-none"
         style={{
