@@ -22,6 +22,8 @@ const editor = () => {
   const [currentVideoTime, setCurrentVideoTime] = useState(0);
   const videoRef = useRef(null);
 
+  // console.log(currentVideoTime);
+
   return (
     <div className="h-[100vh] bg-[#ffffff]">
       <div className="h-[70vh]  max-sm:flex-col bg-[#eaeaea] border-b border-[#00000014] flex justify-between">
@@ -65,7 +67,7 @@ const editor = () => {
             <div className="editing-panel absolute inset-0 bg-[#000]">
               <VideoPlayer
                 videoRef={videoRef}
-                currenVideoTime={currentVideoTime}
+                currentVideoTime={currentVideoTime}
                 setCurrentVideoTime={setCurrentVideoTime}
               />
             </div>
@@ -85,7 +87,7 @@ const editor = () => {
       <ControlTools />
       <TrackRange
         videoRef={videoRef}
-        currenVideoTime={currentVideoTime}
+        currentVideoTime={currentVideoTime}
         setCurrentVideoTime={setCurrentVideoTime}
       />
 

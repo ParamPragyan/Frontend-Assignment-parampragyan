@@ -1,15 +1,25 @@
 import React from "react";
 
-const TrackRange = ({videoRef, currentVideoTime, setCurrentVideoTime}) => {
+
+
+const TrackRange = ({ videoRef, currentVideoTime, setCurrentVideoTime }) => {
 
   const handleChange = (event) => {
     const { value } = event.target;
-    setCurrentVideoTime(value);
     if (videoRef.current) {
       const newTime = (value / 100) * videoRef.current.duration;
       videoRef.current.currentTime = newTime;
+      setCurrentVideoTime(value);
+
+
     }
   };
+
+  // console.log(currentVideoTime);
+
+  // useEffect(() => {
+  //   console.log(currentVideoTime);
+  // })
 
   return (
     <div className=" px-5 w-full relative overflow-hidden">

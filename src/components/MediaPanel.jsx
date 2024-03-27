@@ -9,7 +9,11 @@ const MediaPanel = () => {
           key={idx}
           className=" flex flex-col w-fit h-fit justify-start items-start"
         >
-          <div className="w-[15rem] h-[10rem] bg-[black] rounded-md"></div>
+          <div className="w-[15rem] h-[10rem] bg-[black] rounded-md">
+            <video>
+              <source src={media.file} type="video/mp4"/>
+            </video>
+          </div>
           <h1 key={idx} className="text-xl font-medium">
             {media.name}
           </h1>
